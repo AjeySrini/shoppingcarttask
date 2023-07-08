@@ -14,12 +14,12 @@ function App() {
   };
   // function to remove from the cart list
   const removeFromCart = (product) => {
-    setCartList(cartList.filter((item) => item!== product));
+    setCartList(cartList.filter((item) => item !== product));
   };
   
   return (
     <div className="App">
-      <Header itemcount={cartList.length}/>
+      <Header itemcount={cartList}/>
       <Content
       addToCart={addToCart}
       removeFromCart={removeFromCart}
